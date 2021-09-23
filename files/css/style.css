@@ -1,0 +1,319 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body {
+    font-family: Lato, sans-serif;
+    height: 100%;
+}
+main {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.content {
+    flex: 1 1 auto;
+}
+.scene {
+    background: url(../images/handlebar_.png) center no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 120px;
+}
+.container-fluid {
+    position: relative;
+    /* overflow: hidden;
+    min-height: 100%; */
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    margin-bottom: 35px;
+}
+.menu__item {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #4d4959;
+    padding-left: 35px;
+}
+.logo__link {
+    display: inline-block;
+    margin: 0 70px 0 70px;
+}
+
+/*-------about--------  */
+.about {
+    background: #ffffff;
+    margin-bottom: 145px;
+}
+.about__item {
+    padding: 1px;
+}
+.about__inner {
+    display: flex;
+    text-align: center;
+}
+.about__img {
+    margin-bottom: 35px;
+}
+.about__title {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #353738;
+    margin-bottom: 35px;
+}
+.about__text {
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 400;
+    color: #848789;
+}
+
+/* ---information----- */
+/* .information {
+    margin-bottom: 125px;
+} */
+
+.information__wrap {
+    display: flex;
+    height: 600px;
+}
+.information__inner--big-top, .information__inner--big-average, .information__inner--big-bottom,.information__inner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    width: 66.666%;
+}
+.information__img {
+    width: 100%;
+}
+.information__inner--big-top::after {
+    content: "";
+    position: absolute;
+    background: url('../images/logo_work.png') no-repeat;
+    width: 113px;
+    height: 118px;
+    top: 245px;
+}
+.information__inner--big-average::after{
+    content: "";
+    position: absolute;
+    background: url('../images/logo_vintage.png') no-repeat;
+    width: 177px;
+    height: 152px;
+    top: 245px;
+}
+.information__inner--big-bottom::after{
+    content: "";
+    position: absolute;
+    background: url('../images/logo_retro.png') no-repeat;
+    width: 208px;
+    height: 67px;
+    top: 245px;
+}
+.information__inner--small {
+    width: 33.333%;
+}
+.information__content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+.information__item {
+    flex: 1 1 auto;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: center;
+}
+.info__img {
+    width: 40px;
+    height: 30px;
+    margin-bottom: 30px;
+}
+.info__img-bottom {
+    width: 23px;
+    height: 41px;
+    margin-bottom: 30px;
+}
+.info__title {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #353738;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.info__text {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #848789;
+    position: relative;
+    text-align: justify;
+}
+.information__item::after {
+    content: "";
+    border-bottom: 1px solid rgba(53,55,56,0.2);;
+    width: 50px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+.information__img-top--small {
+    height: 100%;
+
+}
+.information__image--small {
+    position: relative;
+    display: inline-block;
+    
+}
+.information__image--small::after {
+    content: "";
+    position: absolute;
+    margin-left: 50%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 25px solid rgb(255, 255, 255);
+
+}
+.info__img-boriosa {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 30px;
+}
+
+/* ----twitter---- */
+.twitter__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 125px;
+    padding-bottom: 110px;
+}
+.twitter__img {
+    width: 32px;
+    height: 27px;
+}
+.twitter__logo {
+    padding-bottom: 30px;
+}
+.twitter__title {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #353738;
+    
+}
+.twitter__span {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: #848789
+}
+.twitter__text {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 400;
+    font-style: italic;
+    color: #848789;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+
+/* ----footer----- */
+
+.footer__row {
+    display: flex;
+    align-items: center;
+}
+.container {
+    max-width: 1096px;
+    margin: 0 auto;
+}
+.footer {
+    background-color: #f7f7f7;
+}
+.footer__row {
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    line-height: 17px;
+    color: #848789;
+}
+
+.footer__text--left {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer__text--italic {
+    font-size: 13.9px;
+    font-weight: 400;
+    font-style: italic;
+}
+.footer__social {
+    display: flex;
+}
+.footer__img {
+    margin: 0 7.5px 0 7.5px;
+}
+.footer__right {
+    display: flex;
+}
+.footer__text--right {
+    display: flex;
+    font-size: 13.9px;
+    font-weight: 400;
+    font-style: italic;
+}
+.footer__txt {
+    padding: 5px 10px 0 0;
+
+}
+.footer__logo {
+    display: inline-block;
+}

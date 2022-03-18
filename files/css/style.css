@@ -50,14 +50,23 @@ main {
     padding-top: 35px;
     margin-bottom: 35px;
 }
-.menu__item {
-    font-size: 13px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #4d4959;
-    padding-left: 35px;
+.menu__item,
+.menu__item-dot {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #4d4959;
+  padding-left: 35px;
+  border: 1px solid transparent;
+  border-radius: 18px;
+  transition: border-color 0.8s ease;
+  padding: 11px 13px;
+}
+.menu__item:hover {
+  border-color: aquamarine;
 }
 .logo__link {
     display: inline-block;
